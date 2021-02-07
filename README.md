@@ -1,4 +1,4 @@
-# giveaways System by tarik , layer team
+# Giveaways System by Karlos,Tarik , LayerTeam ....
 
 package : discord-giveaways
 
