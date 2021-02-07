@@ -14,7 +14,7 @@ const { GiveawaysManager } = require('discord-giveaways');
 const ms = require('ms');
 client.on('message', message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + 'giveaway')) {
+  if (message.content.startsWith(prefix + 'start')) {
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('You are not allowed to start giveaways');
     let args = message.content.slice(prefix.length).trim().split(/ +/g);
         let channel = message.mentions.channels.first();
@@ -70,7 +70,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith(prefix + 'endgive')) {
+  if (message.content.startsWith(prefix + 'end')) {
   let layerArgs = message.content.split(" ").slice(1).join(" ")
     if(!message.member.hasPermission('MANAGE_MESSAGES')){
         return message.channel.send(':x: You need to have the manage messages permissions to reroll giveaways.');
