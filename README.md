@@ -13,6 +13,10 @@ start , end
 تحميل بكج القيف اويس
 npm install --save discord-giveaways
 
+تحميل بكج ام اس
+npm install --save ms
+
+
 لازم يكون عندك ملف بأٍسم
 
 giveaways.json
