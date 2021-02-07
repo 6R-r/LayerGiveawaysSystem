@@ -1,5 +1,5 @@
 const { GiveawaysManager } = require('discord-giveaways');
-  
+    const ms = require('ms');
   client.giveawaysManager = new GiveawaysManager(client, {
       updateCountdownEvery: 5000,
       default: {
